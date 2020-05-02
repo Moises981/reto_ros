@@ -1,8 +1,0 @@
-prefix=/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/install
-
-Name: bb8_description
-Description: Description of bb8_description
-Version: 0.0.1
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

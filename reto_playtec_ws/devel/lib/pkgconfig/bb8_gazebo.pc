@@ -1,8 +1,0 @@
-prefix=/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel
-
-Name: bb8_gazebo
-Description: Description of bb8_gazebo
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
