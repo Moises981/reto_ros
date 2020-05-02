@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rog-strix/Desktop/reto_playtec_ws/src
+CMAKE_SOURCE_DIR = /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rog-strix/Desktop/reto_playtec_ws/build
+CMAKE_BINARY_DIR = /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build
 
 # Include any dependencies generated for this target.
 include bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/depend.make
@@ -58,17 +58,17 @@ include bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/progress.make
 include bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/flags.make
 
 bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/src/cmd_pub.cpp.o: bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/flags.make
-bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/src/cmd_pub.cpp.o: /home/rog-strix/Desktop/reto_playtec_ws/src/bb8_arduino/bb8_control/src/cmd_pub.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rog-strix/Desktop/reto_playtec_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/src/cmd_pub.cpp.o"
-	cd /home/rog-strix/Desktop/reto_playtec_ws/build/bb8_arduino/bb8_control && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cmd_pub.dir/src/cmd_pub.cpp.o -c /home/rog-strix/Desktop/reto_playtec_ws/src/bb8_arduino/bb8_control/src/cmd_pub.cpp
+bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/src/cmd_pub.cpp.o: /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/src/bb8_arduino/bb8_control/src/cmd_pub.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/src/cmd_pub.cpp.o"
+	cd /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build/bb8_arduino/bb8_control && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cmd_pub.dir/src/cmd_pub.cpp.o -c /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/src/bb8_arduino/bb8_control/src/cmd_pub.cpp
 
 bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/src/cmd_pub.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmd_pub.dir/src/cmd_pub.cpp.i"
-	cd /home/rog-strix/Desktop/reto_playtec_ws/build/bb8_arduino/bb8_control && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rog-strix/Desktop/reto_playtec_ws/src/bb8_arduino/bb8_control/src/cmd_pub.cpp > CMakeFiles/cmd_pub.dir/src/cmd_pub.cpp.i
+	cd /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build/bb8_arduino/bb8_control && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/src/bb8_arduino/bb8_control/src/cmd_pub.cpp > CMakeFiles/cmd_pub.dir/src/cmd_pub.cpp.i
 
 bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/src/cmd_pub.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmd_pub.dir/src/cmd_pub.cpp.s"
-	cd /home/rog-strix/Desktop/reto_playtec_ws/build/bb8_arduino/bb8_control && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rog-strix/Desktop/reto_playtec_ws/src/bb8_arduino/bb8_control/src/cmd_pub.cpp -o CMakeFiles/cmd_pub.dir/src/cmd_pub.cpp.s
+	cd /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build/bb8_arduino/bb8_control && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/src/bb8_arduino/bb8_control/src/cmd_pub.cpp -o CMakeFiles/cmd_pub.dir/src/cmd_pub.cpp.s
 
 bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/src/cmd_pub.cpp.o.requires:
 
@@ -88,56 +88,56 @@ cmd_pub_OBJECTS = \
 # External object files for target cmd_pub
 cmd_pub_EXTERNAL_OBJECTS =
 
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/src/cmd_pub.cpp.o
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/build.make
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libcontroller_manager.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/librobot_state_publisher_solver.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libjoint_state_listener.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libkdl_parser.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/liburdf.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libtinyxml.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libclass_loader.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/libPocoFoundation.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libroslib.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/librospack.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/librosconsole_bridge.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libtf2_ros.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libactionlib.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libmessage_filters.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libtf2.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/liborocos-kdl.so.1.4.0
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libroscpp.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/librosconsole.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/librostime.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libcpp_common.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rog-strix/Desktop/reto_playtec_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub"
-	cd /home/rog-strix/Desktop/reto_playtec_ws/build/bb8_arduino/bb8_control && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cmd_pub.dir/link.txt --verbose=$(VERBOSE)
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/src/cmd_pub.cpp.o
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/build.make
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libcontroller_manager.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/librobot_state_publisher_solver.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libjoint_state_listener.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libkdl_parser.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/liburdf.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libclass_loader.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/libPocoFoundation.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libroslib.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/librospack.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/librosconsole_bridge.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libtf2_ros.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libactionlib.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libmessage_filters.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libtf2.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/liborocos-kdl.so.1.4.0
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libroscpp.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/librosconsole.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/librostime.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /opt/ros/melodic/lib/libcpp_common.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub: bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub"
+	cd /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build/bb8_arduino/bb8_control && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cmd_pub.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/build: /home/rog-strix/Desktop/reto_playtec_ws/devel/lib/bb8_control/cmd_pub
+bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/build: /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel/lib/bb8_control/cmd_pub
 
 .PHONY : bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/build
 
@@ -146,10 +146,10 @@ bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/requires: bb8_arduino/bb8_control
 .PHONY : bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/requires
 
 bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/clean:
-	cd /home/rog-strix/Desktop/reto_playtec_ws/build/bb8_arduino/bb8_control && $(CMAKE_COMMAND) -P CMakeFiles/cmd_pub.dir/cmake_clean.cmake
+	cd /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build/bb8_arduino/bb8_control && $(CMAKE_COMMAND) -P CMakeFiles/cmd_pub.dir/cmake_clean.cmake
 .PHONY : bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/clean
 
 bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/depend:
-	cd /home/rog-strix/Desktop/reto_playtec_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rog-strix/Desktop/reto_playtec_ws/src /home/rog-strix/Desktop/reto_playtec_ws/src/bb8_arduino/bb8_control /home/rog-strix/Desktop/reto_playtec_ws/build /home/rog-strix/Desktop/reto_playtec_ws/build/bb8_arduino/bb8_control /home/rog-strix/Desktop/reto_playtec_ws/build/bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/src /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/src/bb8_arduino/bb8_control /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build/bb8_arduino/bb8_control /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build/bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : bb8_arduino/bb8_control/CMakeFiles/cmd_pub.dir/depend
 

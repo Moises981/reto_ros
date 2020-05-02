@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.7.2)
 
-set(ROSSERIAL_ARDUINO_TOOLCHAIN "/home/rog-strix/Desktop/reto_playtec_ws/src/bb8_arduino/rosserial/rosserial_arduino/arduino-cmake/cmake/ArduinoToolchain.cmake")
+set(ROSSERIAL_ARDUINO_TOOLCHAIN "/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/src/rosserial/rosserial_arduino/arduino-cmake/cmake/ArduinoToolchain.cmake")
 

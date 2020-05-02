@@ -1,4 +1,4 @@
-prefix=/home/rog-strix/Desktop/reto_playtec_ws/devel
+prefix=/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel
 
 Name: rosserial_client
 Description: Description of rosserial_client

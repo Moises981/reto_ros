@@ -1,8 +1,8 @@
-# Install script for directory: /home/rog-strix/Desktop/reto_playtec_ws/src/reto_ros
+# Install script for directory: /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/src/reto_ros
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/rog-strix/Desktop/reto_playtec_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/rog-strix/Desktop/reto_playtec_ws/build/reto_ros/catkin_generated/installspace/reto_ros.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build/reto_ros/catkin_generated/installspace/reto_ros.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/reto_ros/cmake" TYPE FILE FILES
-    "/home/rog-strix/Desktop/reto_playtec_ws/build/reto_ros/catkin_generated/installspace/reto_rosConfig.cmake"
-    "/home/rog-strix/Desktop/reto_playtec_ws/build/reto_ros/catkin_generated/installspace/reto_rosConfig-version.cmake"
+    "/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build/reto_ros/catkin_generated/installspace/reto_rosConfig.cmake"
+    "/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build/reto_ros/catkin_generated/installspace/reto_rosConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/reto_ros" TYPE FILE FILES "/home/rog-strix/Desktop/reto_playtec_ws/src/reto_ros/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/reto_ros" TYPE FILE FILES "/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/src/reto_ros/package.xml")
 endif()
 

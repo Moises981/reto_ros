@@ -1,4 +1,4 @@
-prefix=/home/rog-strix/Desktop/reto_playtec_ws/devel
+prefix=/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/devel
 
 Name: bb8_description
 Description: Description of bb8_description

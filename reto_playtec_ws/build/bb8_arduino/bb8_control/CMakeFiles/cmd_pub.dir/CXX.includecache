@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/rog-strix/Desktop/reto_playtec_ws/src/bb8_arduino/bb8_control/src/cmd_pub.cpp
+/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/src/bb8_arduino/bb8_control/src/cmd_pub.cpp
 ros/ros.h
 -
 geometry_msgs/Twist.h

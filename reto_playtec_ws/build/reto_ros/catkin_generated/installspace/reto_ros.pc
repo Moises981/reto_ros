@@ -1,4 +1,4 @@
-prefix=/home/rog-strix/Desktop/reto_playtec_ws/install
+prefix=/home/rog-strix/Desktop/reto_ros/reto_playtec_ws/install
 
 Name: reto_ros
 Description: Description of reto_ros

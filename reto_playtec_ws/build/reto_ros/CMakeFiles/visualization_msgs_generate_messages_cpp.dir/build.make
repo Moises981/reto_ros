@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rog-strix/Desktop/reto_playtec_ws/src
+CMAKE_SOURCE_DIR = /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rog-strix/Desktop/reto_playtec_ws/build
+CMAKE_BINARY_DIR = /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build
 
 # Utility rule file for visualization_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ reto_ros/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build: visualiz
 .PHONY : reto_ros/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
 
 reto_ros/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/clean:
-	cd /home/rog-strix/Desktop/reto_playtec_ws/build/reto_ros && $(CMAKE_COMMAND) -P CMakeFiles/visualization_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build/reto_ros && $(CMAKE_COMMAND) -P CMakeFiles/visualization_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : reto_ros/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/clean
 
 reto_ros/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/depend:
-	cd /home/rog-strix/Desktop/reto_playtec_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rog-strix/Desktop/reto_playtec_ws/src /home/rog-strix/Desktop/reto_playtec_ws/src/reto_ros /home/rog-strix/Desktop/reto_playtec_ws/build /home/rog-strix/Desktop/reto_playtec_ws/build/reto_ros /home/rog-strix/Desktop/reto_playtec_ws/build/reto_ros/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/src /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/src/reto_ros /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build/reto_ros /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build/reto_ros/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : reto_ros/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/depend
 

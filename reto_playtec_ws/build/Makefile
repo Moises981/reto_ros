@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rog-strix/Desktop/reto_playtec_ws/src
+CMAKE_SOURCE_DIR = /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rog-strix/Desktop/reto_playtec_ws/build
+CMAKE_BINARY_DIR = /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rog-strix/Desktop/reto_playtec_ws/build/CMakeFiles /home/rog-strix/Desktop/reto_playtec_ws/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build/CMakeFiles /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rog-strix/Desktop/reto_playtec_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -307,8 +307,21 @@ _rosserial_arduino_generate_messages_check_deps_Test: cmake_check_build_system
 
 # fast build rule for target.
 _rosserial_arduino_generate_messages_check_deps_Test/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/_rosserial_arduino_generate_messages_check_deps_Test.dir/build.make bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/_rosserial_arduino_generate_messages_check_deps_Test.dir/build
+	$(MAKE) -f rosserial/rosserial_arduino/CMakeFiles/_rosserial_arduino_generate_messages_check_deps_Test.dir/build.make rosserial/rosserial_arduino/CMakeFiles/_rosserial_arduino_generate_messages_check_deps_Test.dir/build
 .PHONY : _rosserial_arduino_generate_messages_check_deps_Test/fast
+
+#=============================================================================
+# Target rules for targets named rosserial_arduino_gencpp
+
+# Build rule for target.
+rosserial_arduino_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosserial_arduino_gencpp
+.PHONY : rosserial_arduino_gencpp
+
+# fast build rule for target.
+rosserial_arduino_gencpp/fast:
+	$(MAKE) -f rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_gencpp.dir/build.make rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_gencpp.dir/build
+.PHONY : rosserial_arduino_gencpp/fast
 
 #=============================================================================
 # Target rules for targets named rosserial_arduino_generate_messages_cpp
@@ -320,21 +333,8 @@ rosserial_arduino_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_arduino_generate_messages_cpp/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_generate_messages_cpp.dir/build.make bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_generate_messages_cpp.dir/build
+	$(MAKE) -f rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_generate_messages_cpp.dir/build.make rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_generate_messages_cpp.dir/build
 .PHONY : rosserial_arduino_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named _rosserial_arduino_generate_messages_check_deps_Adc
-
-# Build rule for target.
-_rosserial_arduino_generate_messages_check_deps_Adc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _rosserial_arduino_generate_messages_check_deps_Adc
-.PHONY : _rosserial_arduino_generate_messages_check_deps_Adc
-
-# fast build rule for target.
-_rosserial_arduino_generate_messages_check_deps_Adc/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/_rosserial_arduino_generate_messages_check_deps_Adc.dir/build.make bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/_rosserial_arduino_generate_messages_check_deps_Adc.dir/build
-.PHONY : _rosserial_arduino_generate_messages_check_deps_Adc/fast
 
 #=============================================================================
 # Target rules for targets named rosserial_arduino_generate_messages
@@ -346,7 +346,7 @@ rosserial_arduino_generate_messages: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_arduino_generate_messages/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_generate_messages.dir/build.make bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_generate_messages.dir/build
+	$(MAKE) -f rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_generate_messages.dir/build.make rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_generate_messages.dir/build
 .PHONY : rosserial_arduino_generate_messages/fast
 
 #=============================================================================
@@ -359,21 +359,21 @@ rosserial_arduino_geneus: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_arduino_geneus/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_geneus.dir/build.make bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_geneus.dir/build
+	$(MAKE) -f rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_geneus.dir/build.make rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_geneus.dir/build
 .PHONY : rosserial_arduino_geneus/fast
 
 #=============================================================================
-# Target rules for targets named rosserial_arduino_gencpp
+# Target rules for targets named _rosserial_arduino_generate_messages_check_deps_Adc
 
 # Build rule for target.
-rosserial_arduino_gencpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosserial_arduino_gencpp
-.PHONY : rosserial_arduino_gencpp
+_rosserial_arduino_generate_messages_check_deps_Adc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _rosserial_arduino_generate_messages_check_deps_Adc
+.PHONY : _rosserial_arduino_generate_messages_check_deps_Adc
 
 # fast build rule for target.
-rosserial_arduino_gencpp/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_gencpp.dir/build.make bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_gencpp.dir/build
-.PHONY : rosserial_arduino_gencpp/fast
+_rosserial_arduino_generate_messages_check_deps_Adc/fast:
+	$(MAKE) -f rosserial/rosserial_arduino/CMakeFiles/_rosserial_arduino_generate_messages_check_deps_Adc.dir/build.make rosserial/rosserial_arduino/CMakeFiles/_rosserial_arduino_generate_messages_check_deps_Adc.dir/build
+.PHONY : _rosserial_arduino_generate_messages_check_deps_Adc/fast
 
 #=============================================================================
 # Target rules for targets named rosserial_arduino_generate_messages_lisp
@@ -385,7 +385,7 @@ rosserial_arduino_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_arduino_generate_messages_lisp/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_generate_messages_lisp.dir/build.make bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_generate_messages_lisp.dir/build
+	$(MAKE) -f rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_generate_messages_lisp.dir/build.make rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_generate_messages_lisp.dir/build
 .PHONY : rosserial_arduino_generate_messages_lisp/fast
 
 #=============================================================================
@@ -398,7 +398,7 @@ rosserial_arduino_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_arduino_generate_messages_py/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_generate_messages_py.dir/build.make bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_generate_messages_py.dir/build
+	$(MAKE) -f rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_generate_messages_py.dir/build.make rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_generate_messages_py.dir/build
 .PHONY : rosserial_arduino_generate_messages_py/fast
 
 #=============================================================================
@@ -411,7 +411,7 @@ rosserial_arduino_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_arduino_generate_messages_nodejs/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_generate_messages_nodejs.dir/build.make bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_generate_messages_nodejs.dir/build
+	$(MAKE) -f rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_generate_messages_nodejs.dir/build.make rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_generate_messages_nodejs.dir/build
 .PHONY : rosserial_arduino_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -424,7 +424,7 @@ rosserial_arduino_gennodejs: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_arduino_gennodejs/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_gennodejs.dir/build.make bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_gennodejs.dir/build
+	$(MAKE) -f rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_gennodejs.dir/build.make rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_gennodejs.dir/build
 .PHONY : rosserial_arduino_gennodejs/fast
 
 #=============================================================================
@@ -437,7 +437,7 @@ rosserial_arduino_genlisp: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_arduino_genlisp/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_genlisp.dir/build.make bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_genlisp.dir/build
+	$(MAKE) -f rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_genlisp.dir/build.make rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_genlisp.dir/build
 .PHONY : rosserial_arduino_genlisp/fast
 
 #=============================================================================
@@ -450,7 +450,7 @@ rosserial_arduino_genpy: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_arduino_genpy/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_genpy.dir/build.make bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_genpy.dir/build
+	$(MAKE) -f rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_genpy.dir/build.make rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_genpy.dir/build
 .PHONY : rosserial_arduino_genpy/fast
 
 #=============================================================================
@@ -463,7 +463,7 @@ rosserial_arduino_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_arduino_generate_messages_eus/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_generate_messages_eus.dir/build.make bb8_arduino/rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_generate_messages_eus.dir/build
+	$(MAKE) -f rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_generate_messages_eus.dir/build.make rosserial/rosserial_arduino/CMakeFiles/rosserial_arduino_generate_messages_eus.dir/build
 .PHONY : rosserial_arduino_generate_messages_eus/fast
 
 #=============================================================================
@@ -476,7 +476,7 @@ rosserial_mbed_geneus: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_mbed_geneus/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_geneus.dir/build.make bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_geneus.dir/build
+	$(MAKE) -f rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_geneus.dir/build.make rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_geneus.dir/build
 .PHONY : rosserial_mbed_geneus/fast
 
 #=============================================================================
@@ -489,21 +489,8 @@ rosserial_mbed_gencpp: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_mbed_gencpp/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_gencpp.dir/build.make bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_gencpp.dir/build
+	$(MAKE) -f rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_gencpp.dir/build.make rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_gencpp.dir/build
 .PHONY : rosserial_mbed_gencpp/fast
-
-#=============================================================================
-# Target rules for targets named _rosserial_mbed_generate_messages_check_deps_Test
-
-# Build rule for target.
-_rosserial_mbed_generate_messages_check_deps_Test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _rosserial_mbed_generate_messages_check_deps_Test
-.PHONY : _rosserial_mbed_generate_messages_check_deps_Test
-
-# fast build rule for target.
-_rosserial_mbed_generate_messages_check_deps_Test/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/_rosserial_mbed_generate_messages_check_deps_Test.dir/build.make bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/_rosserial_mbed_generate_messages_check_deps_Test.dir/build
-.PHONY : _rosserial_mbed_generate_messages_check_deps_Test/fast
 
 #=============================================================================
 # Target rules for targets named rosserial_mbed_generate_messages_py
@@ -515,7 +502,7 @@ rosserial_mbed_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_mbed_generate_messages_py/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_generate_messages_py.dir/build.make bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_generate_messages_py.dir/build
+	$(MAKE) -f rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_generate_messages_py.dir/build.make rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_generate_messages_py.dir/build
 .PHONY : rosserial_mbed_generate_messages_py/fast
 
 #=============================================================================
@@ -528,7 +515,7 @@ _rosserial_mbed_generate_messages_check_deps_Adc: cmake_check_build_system
 
 # fast build rule for target.
 _rosserial_mbed_generate_messages_check_deps_Adc/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/_rosserial_mbed_generate_messages_check_deps_Adc.dir/build.make bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/_rosserial_mbed_generate_messages_check_deps_Adc.dir/build
+	$(MAKE) -f rosserial/rosserial_mbed/CMakeFiles/_rosserial_mbed_generate_messages_check_deps_Adc.dir/build.make rosserial/rosserial_mbed/CMakeFiles/_rosserial_mbed_generate_messages_check_deps_Adc.dir/build
 .PHONY : _rosserial_mbed_generate_messages_check_deps_Adc/fast
 
 #=============================================================================
@@ -541,7 +528,7 @@ rosserial_mbed_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_mbed_generate_messages_eus/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_generate_messages_eus.dir/build.make bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_generate_messages_eus.dir/build
+	$(MAKE) -f rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_generate_messages_eus.dir/build.make rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_generate_messages_eus.dir/build
 .PHONY : rosserial_mbed_generate_messages_eus/fast
 
 #=============================================================================
@@ -554,8 +541,21 @@ rosserial_mbed_genlisp: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_mbed_genlisp/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_genlisp.dir/build.make bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_genlisp.dir/build
+	$(MAKE) -f rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_genlisp.dir/build.make rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_genlisp.dir/build
 .PHONY : rosserial_mbed_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named _rosserial_mbed_generate_messages_check_deps_Test
+
+# Build rule for target.
+_rosserial_mbed_generate_messages_check_deps_Test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _rosserial_mbed_generate_messages_check_deps_Test
+.PHONY : _rosserial_mbed_generate_messages_check_deps_Test
+
+# fast build rule for target.
+_rosserial_mbed_generate_messages_check_deps_Test/fast:
+	$(MAKE) -f rosserial/rosserial_mbed/CMakeFiles/_rosserial_mbed_generate_messages_check_deps_Test.dir/build.make rosserial/rosserial_mbed/CMakeFiles/_rosserial_mbed_generate_messages_check_deps_Test.dir/build
+.PHONY : _rosserial_mbed_generate_messages_check_deps_Test/fast
 
 #=============================================================================
 # Target rules for targets named rosserial_mbed_generate_messages_lisp
@@ -567,7 +567,7 @@ rosserial_mbed_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_mbed_generate_messages_lisp/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_generate_messages_lisp.dir/build.make bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_generate_messages_lisp.dir/build
+	$(MAKE) -f rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_generate_messages_lisp.dir/build.make rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_generate_messages_lisp.dir/build
 .PHONY : rosserial_mbed_generate_messages_lisp/fast
 
 #=============================================================================
@@ -580,7 +580,7 @@ rosserial_mbed_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_mbed_generate_messages_cpp/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_generate_messages_cpp.dir/build.make bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_generate_messages_cpp.dir/build
+	$(MAKE) -f rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_generate_messages_cpp.dir/build.make rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_generate_messages_cpp.dir/build
 .PHONY : rosserial_mbed_generate_messages_cpp/fast
 
 #=============================================================================
@@ -593,7 +593,7 @@ rosserial_mbed_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_mbed_generate_messages_nodejs/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_generate_messages_nodejs.dir/build.make bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_generate_messages_nodejs.dir/build
+	$(MAKE) -f rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_generate_messages_nodejs.dir/build.make rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_generate_messages_nodejs.dir/build
 .PHONY : rosserial_mbed_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -606,7 +606,7 @@ rosserial_mbed_gennodejs: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_mbed_gennodejs/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_gennodejs.dir/build.make bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_gennodejs.dir/build
+	$(MAKE) -f rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_gennodejs.dir/build.make rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_gennodejs.dir/build
 .PHONY : rosserial_mbed_gennodejs/fast
 
 #=============================================================================
@@ -619,7 +619,7 @@ rosserial_mbed_generate_messages: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_mbed_generate_messages/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_generate_messages.dir/build.make bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_generate_messages.dir/build
+	$(MAKE) -f rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_generate_messages.dir/build.make rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_generate_messages.dir/build
 .PHONY : rosserial_mbed_generate_messages/fast
 
 #=============================================================================
@@ -632,21 +632,8 @@ rosserial_mbed_genpy: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_mbed_genpy/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_genpy.dir/build.make bb8_arduino/rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_genpy.dir/build
+	$(MAKE) -f rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_genpy.dir/build.make rosserial/rosserial_mbed/CMakeFiles/rosserial_mbed_genpy.dir/build
 .PHONY : rosserial_mbed_genpy/fast
-
-#=============================================================================
-# Target rules for targets named rosserial_msgs_gencpp
-
-# Build rule for target.
-rosserial_msgs_gencpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosserial_msgs_gencpp
-.PHONY : rosserial_msgs_gencpp
-
-# fast build rule for target.
-rosserial_msgs_gencpp/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_gencpp.dir/build.make bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_gencpp.dir/build
-.PHONY : rosserial_msgs_gencpp/fast
 
 #=============================================================================
 # Target rules for targets named _rosserial_msgs_generate_messages_check_deps_RequestParam
@@ -658,7 +645,7 @@ _rosserial_msgs_generate_messages_check_deps_RequestParam: cmake_check_build_sys
 
 # fast build rule for target.
 _rosserial_msgs_generate_messages_check_deps_RequestParam/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/_rosserial_msgs_generate_messages_check_deps_RequestParam.dir/build.make bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/_rosserial_msgs_generate_messages_check_deps_RequestParam.dir/build
+	$(MAKE) -f rosserial/rosserial_msgs/CMakeFiles/_rosserial_msgs_generate_messages_check_deps_RequestParam.dir/build.make rosserial/rosserial_msgs/CMakeFiles/_rosserial_msgs_generate_messages_check_deps_RequestParam.dir/build
 .PHONY : _rosserial_msgs_generate_messages_check_deps_RequestParam/fast
 
 #=============================================================================
@@ -671,8 +658,21 @@ rosserial_msgs_generate_messages: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_msgs_generate_messages/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_generate_messages.dir/build.make bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_generate_messages.dir/build
+	$(MAKE) -f rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_generate_messages.dir/build.make rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_generate_messages.dir/build
 .PHONY : rosserial_msgs_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named rosserial_msgs_gencpp
+
+# Build rule for target.
+rosserial_msgs_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosserial_msgs_gencpp
+.PHONY : rosserial_msgs_gencpp
+
+# fast build rule for target.
+rosserial_msgs_gencpp/fast:
+	$(MAKE) -f rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_gencpp.dir/build.make rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_gencpp.dir/build
+.PHONY : rosserial_msgs_gencpp/fast
 
 #=============================================================================
 # Target rules for targets named rosserial_msgs_generate_messages_eus
@@ -684,7 +684,7 @@ rosserial_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_msgs_generate_messages_eus/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_generate_messages_eus.dir/build.make bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_generate_messages_eus.dir/build.make rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_generate_messages_eus.dir/build
 .PHONY : rosserial_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -697,7 +697,7 @@ rosserial_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_generate_messages_nodejs.dir/build.make bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_generate_messages_nodejs.dir/build.make rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosserial_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -710,7 +710,7 @@ rosserial_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_generate_messages_cpp.dir/build.make bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_generate_messages_cpp.dir/build.make rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_generate_messages_cpp.dir/build
 .PHONY : rosserial_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -723,7 +723,7 @@ rosserial_msgs_geneus: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_msgs_geneus/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_geneus.dir/build.make bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_geneus.dir/build
+	$(MAKE) -f rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_geneus.dir/build.make rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_geneus.dir/build
 .PHONY : rosserial_msgs_geneus/fast
 
 #=============================================================================
@@ -736,7 +736,7 @@ rosserial_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_generate_messages_lisp.dir/build.make bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_generate_messages_lisp.dir/build.make rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_generate_messages_lisp.dir/build
 .PHONY : rosserial_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -749,7 +749,7 @@ _rosserial_msgs_generate_messages_check_deps_TopicInfo: cmake_check_build_system
 
 # fast build rule for target.
 _rosserial_msgs_generate_messages_check_deps_TopicInfo/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/_rosserial_msgs_generate_messages_check_deps_TopicInfo.dir/build.make bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/_rosserial_msgs_generate_messages_check_deps_TopicInfo.dir/build
+	$(MAKE) -f rosserial/rosserial_msgs/CMakeFiles/_rosserial_msgs_generate_messages_check_deps_TopicInfo.dir/build.make rosserial/rosserial_msgs/CMakeFiles/_rosserial_msgs_generate_messages_check_deps_TopicInfo.dir/build
 .PHONY : _rosserial_msgs_generate_messages_check_deps_TopicInfo/fast
 
 #=============================================================================
@@ -762,7 +762,7 @@ rosserial_msgs_genlisp: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_msgs_genlisp/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_genlisp.dir/build.make bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_genlisp.dir/build
+	$(MAKE) -f rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_genlisp.dir/build.make rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_genlisp.dir/build
 .PHONY : rosserial_msgs_genlisp/fast
 
 #=============================================================================
@@ -775,7 +775,7 @@ _rosserial_msgs_generate_messages_check_deps_Log: cmake_check_build_system
 
 # fast build rule for target.
 _rosserial_msgs_generate_messages_check_deps_Log/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/_rosserial_msgs_generate_messages_check_deps_Log.dir/build.make bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/_rosserial_msgs_generate_messages_check_deps_Log.dir/build
+	$(MAKE) -f rosserial/rosserial_msgs/CMakeFiles/_rosserial_msgs_generate_messages_check_deps_Log.dir/build.make rosserial/rosserial_msgs/CMakeFiles/_rosserial_msgs_generate_messages_check_deps_Log.dir/build
 .PHONY : _rosserial_msgs_generate_messages_check_deps_Log/fast
 
 #=============================================================================
@@ -788,7 +788,7 @@ rosserial_msgs_gennodejs: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_msgs_gennodejs/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_gennodejs.dir/build.make bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_gennodejs.dir/build
+	$(MAKE) -f rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_gennodejs.dir/build.make rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_gennodejs.dir/build
 .PHONY : rosserial_msgs_gennodejs/fast
 
 #=============================================================================
@@ -801,7 +801,7 @@ rosserial_msgs_genpy: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_msgs_genpy/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_genpy.dir/build.make bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_genpy.dir/build
+	$(MAKE) -f rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_genpy.dir/build.make rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_genpy.dir/build
 .PHONY : rosserial_msgs_genpy/fast
 
 #=============================================================================
@@ -814,7 +814,7 @@ rosserial_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_msgs_generate_messages_py/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_generate_messages_py.dir/build.make bb8_arduino/rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_generate_messages_py.dir/build
+	$(MAKE) -f rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_generate_messages_py.dir/build.make rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_generate_messages_py.dir/build
 .PHONY : rosserial_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -827,7 +827,7 @@ _run_tests_rosserial_client: cmake_check_build_system
 
 # fast build rule for target.
 _run_tests_rosserial_client/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_client/CMakeFiles/_run_tests_rosserial_client.dir/build.make bb8_arduino/rosserial/rosserial_client/CMakeFiles/_run_tests_rosserial_client.dir/build
+	$(MAKE) -f rosserial/rosserial_client/CMakeFiles/_run_tests_rosserial_client.dir/build.make rosserial/rosserial_client/CMakeFiles/_run_tests_rosserial_client.dir/build
 .PHONY : _run_tests_rosserial_client/fast
 
 #=============================================================================
@@ -840,7 +840,7 @@ float64_test: cmake_check_build_system
 
 # fast build rule for target.
 float64_test/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_client/CMakeFiles/float64_test.dir/build.make bb8_arduino/rosserial/rosserial_client/CMakeFiles/float64_test.dir/build
+	$(MAKE) -f rosserial/rosserial_client/CMakeFiles/float64_test.dir/build.make rosserial/rosserial_client/CMakeFiles/float64_test.dir/build
 .PHONY : float64_test/fast
 
 #=============================================================================
@@ -853,7 +853,7 @@ _run_tests_rosserial_client_gtest_float64_test: cmake_check_build_system
 
 # fast build rule for target.
 _run_tests_rosserial_client_gtest_float64_test/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_client/CMakeFiles/_run_tests_rosserial_client_gtest_float64_test.dir/build.make bb8_arduino/rosserial/rosserial_client/CMakeFiles/_run_tests_rosserial_client_gtest_float64_test.dir/build
+	$(MAKE) -f rosserial/rosserial_client/CMakeFiles/_run_tests_rosserial_client_gtest_float64_test.dir/build.make rosserial/rosserial_client/CMakeFiles/_run_tests_rosserial_client_gtest_float64_test.dir/build
 .PHONY : _run_tests_rosserial_client_gtest_float64_test/fast
 
 #=============================================================================
@@ -866,7 +866,7 @@ run_tests_rosserial_client_gtest_float64_test: cmake_check_build_system
 
 # fast build rule for target.
 run_tests_rosserial_client_gtest_float64_test/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_float64_test.dir/build.make bb8_arduino/rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_float64_test.dir/build
+	$(MAKE) -f rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_float64_test.dir/build.make rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_float64_test.dir/build
 .PHONY : run_tests_rosserial_client_gtest_float64_test/fast
 
 #=============================================================================
@@ -879,7 +879,7 @@ run_tests_rosserial_client_gtest: cmake_check_build_system
 
 # fast build rule for target.
 run_tests_rosserial_client_gtest/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest.dir/build.make bb8_arduino/rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest.dir/build
+	$(MAKE) -f rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest.dir/build.make rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest.dir/build
 .PHONY : run_tests_rosserial_client_gtest/fast
 
 #=============================================================================
@@ -892,7 +892,7 @@ _run_tests_rosserial_client_gtest: cmake_check_build_system
 
 # fast build rule for target.
 _run_tests_rosserial_client_gtest/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_client/CMakeFiles/_run_tests_rosserial_client_gtest.dir/build.make bb8_arduino/rosserial/rosserial_client/CMakeFiles/_run_tests_rosserial_client_gtest.dir/build
+	$(MAKE) -f rosserial/rosserial_client/CMakeFiles/_run_tests_rosserial_client_gtest.dir/build.make rosserial/rosserial_client/CMakeFiles/_run_tests_rosserial_client_gtest.dir/build
 .PHONY : _run_tests_rosserial_client_gtest/fast
 
 #=============================================================================
@@ -905,7 +905,7 @@ run_tests_rosserial_client: cmake_check_build_system
 
 # fast build rule for target.
 run_tests_rosserial_client/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client.dir/build.make bb8_arduino/rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client.dir/build
+	$(MAKE) -f rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client.dir/build.make rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client.dir/build
 .PHONY : run_tests_rosserial_client/fast
 
 #=============================================================================
@@ -918,7 +918,7 @@ run_tests_rosserial_client_gtest_subscriber_test: cmake_check_build_system
 
 # fast build rule for target.
 run_tests_rosserial_client_gtest_subscriber_test/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_subscriber_test.dir/build.make bb8_arduino/rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_subscriber_test.dir/build
+	$(MAKE) -f rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_subscriber_test.dir/build.make rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_subscriber_test.dir/build
 .PHONY : run_tests_rosserial_client_gtest_subscriber_test/fast
 
 #=============================================================================
@@ -931,7 +931,7 @@ clean_test_results_rosserial_client: cmake_check_build_system
 
 # fast build rule for target.
 clean_test_results_rosserial_client/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_client/CMakeFiles/clean_test_results_rosserial_client.dir/build.make bb8_arduino/rosserial/rosserial_client/CMakeFiles/clean_test_results_rosserial_client.dir/build
+	$(MAKE) -f rosserial/rosserial_client/CMakeFiles/clean_test_results_rosserial_client.dir/build.make rosserial/rosserial_client/CMakeFiles/clean_test_results_rosserial_client.dir/build
 .PHONY : clean_test_results_rosserial_client/fast
 
 #=============================================================================
@@ -944,7 +944,7 @@ subscriber_test: cmake_check_build_system
 
 # fast build rule for target.
 subscriber_test/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_client/CMakeFiles/subscriber_test.dir/build.make bb8_arduino/rosserial/rosserial_client/CMakeFiles/subscriber_test.dir/build
+	$(MAKE) -f rosserial/rosserial_client/CMakeFiles/subscriber_test.dir/build.make rosserial/rosserial_client/CMakeFiles/subscriber_test.dir/build
 .PHONY : subscriber_test/fast
 
 #=============================================================================
@@ -957,7 +957,7 @@ _run_tests_rosserial_client_gtest_subscriber_test: cmake_check_build_system
 
 # fast build rule for target.
 _run_tests_rosserial_client_gtest_subscriber_test/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_client/CMakeFiles/_run_tests_rosserial_client_gtest_subscriber_test.dir/build.make bb8_arduino/rosserial/rosserial_client/CMakeFiles/_run_tests_rosserial_client_gtest_subscriber_test.dir/build
+	$(MAKE) -f rosserial/rosserial_client/CMakeFiles/_run_tests_rosserial_client_gtest_subscriber_test.dir/build.make rosserial/rosserial_client/CMakeFiles/_run_tests_rosserial_client_gtest_subscriber_test.dir/build
 .PHONY : _run_tests_rosserial_client_gtest_subscriber_test/fast
 
 #=============================================================================
@@ -970,7 +970,7 @@ rosserial_server_udp_socket_node: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_server_udp_socket_node/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/build.make bb8_arduino/rosserial/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/build
+	$(MAKE) -f rosserial/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/build.make rosserial/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/build
 .PHONY : rosserial_server_udp_socket_node/fast
 
 #=============================================================================
@@ -983,7 +983,7 @@ rosserial_server_socket_node: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_server_socket_node/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_server/CMakeFiles/rosserial_server_socket_node.dir/build.make bb8_arduino/rosserial/rosserial_server/CMakeFiles/rosserial_server_socket_node.dir/build
+	$(MAKE) -f rosserial/rosserial_server/CMakeFiles/rosserial_server_socket_node.dir/build.make rosserial/rosserial_server/CMakeFiles/rosserial_server_socket_node.dir/build
 .PHONY : rosserial_server_socket_node/fast
 
 #=============================================================================
@@ -996,7 +996,7 @@ topic_tools_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 topic_tools_generate_messages_py/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_server/CMakeFiles/topic_tools_generate_messages_py.dir/build.make bb8_arduino/rosserial/rosserial_server/CMakeFiles/topic_tools_generate_messages_py.dir/build
+	$(MAKE) -f rosserial/rosserial_server/CMakeFiles/topic_tools_generate_messages_py.dir/build.make rosserial/rosserial_server/CMakeFiles/topic_tools_generate_messages_py.dir/build
 .PHONY : topic_tools_generate_messages_py/fast
 
 #=============================================================================
@@ -1009,7 +1009,7 @@ topic_tools_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 topic_tools_generate_messages_nodejs/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_server/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build.make bb8_arduino/rosserial/rosserial_server/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build
+	$(MAKE) -f rosserial/rosserial_server/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build.make rosserial/rosserial_server/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build
 .PHONY : topic_tools_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -1022,7 +1022,7 @@ topic_tools_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 topic_tools_generate_messages_lisp/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_server/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make bb8_arduino/rosserial/rosserial_server/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
+	$(MAKE) -f rosserial/rosserial_server/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make rosserial/rosserial_server/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
 .PHONY : topic_tools_generate_messages_lisp/fast
 
 #=============================================================================
@@ -1035,7 +1035,7 @@ topic_tools_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 topic_tools_generate_messages_eus/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_server/CMakeFiles/topic_tools_generate_messages_eus.dir/build.make bb8_arduino/rosserial/rosserial_server/CMakeFiles/topic_tools_generate_messages_eus.dir/build
+	$(MAKE) -f rosserial/rosserial_server/CMakeFiles/topic_tools_generate_messages_eus.dir/build.make rosserial/rosserial_server/CMakeFiles/topic_tools_generate_messages_eus.dir/build
 .PHONY : topic_tools_generate_messages_eus/fast
 
 #=============================================================================
@@ -1048,7 +1048,7 @@ rosserial_server_lookup: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_server_lookup/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/build.make bb8_arduino/rosserial/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/build
+	$(MAKE) -f rosserial/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/build.make rosserial/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/build
 .PHONY : rosserial_server_lookup/fast
 
 #=============================================================================
@@ -1061,7 +1061,7 @@ roscpp_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_server/CMakeFiles/roscpp_generate_messages_py.dir/build.make bb8_arduino/rosserial/rosserial_server/CMakeFiles/roscpp_generate_messages_py.dir/build
+	$(MAKE) -f rosserial/rosserial_server/CMakeFiles/roscpp_generate_messages_py.dir/build.make rosserial/rosserial_server/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 #=============================================================================
@@ -1074,7 +1074,7 @@ roscpp_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_server/CMakeFiles/roscpp_generate_messages_eus.dir/build.make bb8_arduino/rosserial/rosserial_server/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	$(MAKE) -f rosserial/rosserial_server/CMakeFiles/roscpp_generate_messages_eus.dir/build.make rosserial/rosserial_server/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
 #=============================================================================
@@ -1087,7 +1087,7 @@ roscpp_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_server/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make bb8_arduino/rosserial/rosserial_server/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	$(MAKE) -f rosserial/rosserial_server/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make rosserial/rosserial_server/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 #=============================================================================
@@ -1100,7 +1100,7 @@ rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make bb8_arduino/rosserial/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f rosserial/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make rosserial/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -1113,7 +1113,7 @@ std_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_server/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make bb8_arduino/rosserial/rosserial_server/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f rosserial/rosserial_server/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make rosserial/rosserial_server/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -1126,7 +1126,7 @@ roscpp_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_server/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make bb8_arduino/rosserial/rosserial_server/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	$(MAKE) -f rosserial/rosserial_server/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make rosserial/rosserial_server/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 #=============================================================================
@@ -1139,7 +1139,7 @@ rosgraph_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make bb8_arduino/rosserial/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f rosserial/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make rosserial/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -1152,7 +1152,7 @@ rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make bb8_arduino/rosserial/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f rosserial/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make rosserial/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -1165,7 +1165,7 @@ std_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_server/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make bb8_arduino/rosserial/rosserial_server/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f rosserial/rosserial_server/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make rosserial/rosserial_server/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -1178,7 +1178,7 @@ rosserial_server_serial_node: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_server_serial_node/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/build.make bb8_arduino/rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/build
+	$(MAKE) -f rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/build.make rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/build
 .PHONY : rosserial_server_serial_node/fast
 
 #=============================================================================
@@ -1191,7 +1191,7 @@ rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make bb8_arduino/rosserial/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f rosserial/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make rosserial/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -1204,7 +1204,7 @@ rosgraph_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make bb8_arduino/rosserial/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	$(MAKE) -f rosserial/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make rosserial/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -1217,7 +1217,7 @@ std_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_eus/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_server/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make bb8_arduino/rosserial/rosserial_server/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f rosserial/rosserial_server/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make rosserial/rosserial_server/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -1230,7 +1230,7 @@ topic_tools_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 topic_tools_generate_messages_cpp/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_server/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make bb8_arduino/rosserial/rosserial_server/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
+	$(MAKE) -f rosserial/rosserial_server/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make rosserial/rosserial_server/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
 .PHONY : topic_tools_generate_messages_cpp/fast
 
 #=============================================================================
@@ -1243,7 +1243,7 @@ std_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_server/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make bb8_arduino/rosserial/rosserial_server/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f rosserial/rosserial_server/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make rosserial/rosserial_server/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -1256,7 +1256,7 @@ roscpp_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_server/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make bb8_arduino/rosserial/rosserial_server/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	$(MAKE) -f rosserial/rosserial_server/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make rosserial/rosserial_server/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -1269,7 +1269,7 @@ std_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_server/CMakeFiles/std_msgs_generate_messages_py.dir/build.make bb8_arduino/rosserial/rosserial_server/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	$(MAKE) -f rosserial/rosserial_server/CMakeFiles/std_msgs_generate_messages_py.dir/build.make rosserial/rosserial_server/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -1958,7 +1958,7 @@ run_tests_rosserial_test_rostest: cmake_check_build_system
 
 # fast build rule for target.
 run_tests_rosserial_test_rostest/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest.dir/build.make bb8_arduino/rosserial/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest.dir/build
+	$(MAKE) -f rosserial/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest.dir/build.make rosserial/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest.dir/build
 .PHONY : run_tests_rosserial_test_rostest/fast
 
 #=============================================================================
@@ -1971,7 +1971,7 @@ run_tests_rosserial_test: cmake_check_build_system
 
 # fast build rule for target.
 run_tests_rosserial_test/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_test/CMakeFiles/run_tests_rosserial_test.dir/build.make bb8_arduino/rosserial/rosserial_test/CMakeFiles/run_tests_rosserial_test.dir/build
+	$(MAKE) -f rosserial/rosserial_test/CMakeFiles/run_tests_rosserial_test.dir/build.make rosserial/rosserial_test/CMakeFiles/run_tests_rosserial_test.dir/build
 .PHONY : run_tests_rosserial_test/fast
 
 #=============================================================================
@@ -1984,7 +1984,7 @@ rosserial_test_rosserial_lib: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_test_rosserial_lib/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_test/CMakeFiles/rosserial_test_rosserial_lib.dir/build.make bb8_arduino/rosserial/rosserial_test/CMakeFiles/rosserial_test_rosserial_lib.dir/build
+	$(MAKE) -f rosserial/rosserial_test/CMakeFiles/rosserial_test_rosserial_lib.dir/build.make rosserial/rosserial_test/CMakeFiles/rosserial_test_rosserial_lib.dir/build
 .PHONY : rosserial_test_rosserial_lib/fast
 
 #=============================================================================
@@ -1997,21 +1997,8 @@ _run_tests_rosserial_test: cmake_check_build_system
 
 # fast build rule for target.
 _run_tests_rosserial_test/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test.dir/build.make bb8_arduino/rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test.dir/build
+	$(MAKE) -f rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test.dir/build.make rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test.dir/build
 .PHONY : _run_tests_rosserial_test/fast
-
-#=============================================================================
-# Target rules for targets named _run_tests_rosserial_test_rostest_test_rosserial_python_socket.test
-
-# Build rule for target.
-_run_tests_rosserial_test_rostest_test_rosserial_python_socket.test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_rosserial_test_rostest_test_rosserial_python_socket.test
-.PHONY : _run_tests_rosserial_test_rostest_test_rosserial_python_socket.test
-
-# fast build rule for target.
-_run_tests_rosserial_test_rostest_test_rosserial_python_socket.test/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_python_socket.test.dir/build.make bb8_arduino/rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_python_socket.test.dir/build
-.PHONY : _run_tests_rosserial_test_rostest_test_rosserial_python_socket.test/fast
 
 #=============================================================================
 # Target rules for targets named _run_tests_rosserial_test_rostest_test_rosserial_server_socket.test
@@ -2023,7 +2010,7 @@ _run_tests_rosserial_test_rostest_test_rosserial_server_socket.test: cmake_check
 
 # fast build rule for target.
 _run_tests_rosserial_test_rostest_test_rosserial_server_socket.test/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_socket.test.dir/build.make bb8_arduino/rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_socket.test.dir/build
+	$(MAKE) -f rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_socket.test.dir/build.make rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_socket.test.dir/build
 .PHONY : _run_tests_rosserial_test_rostest_test_rosserial_server_socket.test/fast
 
 #=============================================================================
@@ -2036,7 +2023,7 @@ rosserial_test_publish_subscribe: cmake_check_build_system
 
 # fast build rule for target.
 rosserial_test_publish_subscribe/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_test/CMakeFiles/rosserial_test_publish_subscribe.dir/build.make bb8_arduino/rosserial/rosserial_test/CMakeFiles/rosserial_test_publish_subscribe.dir/build
+	$(MAKE) -f rosserial/rosserial_test/CMakeFiles/rosserial_test_publish_subscribe.dir/build.make rosserial/rosserial_test/CMakeFiles/rosserial_test_publish_subscribe.dir/build
 .PHONY : rosserial_test_publish_subscribe/fast
 
 #=============================================================================
@@ -2049,7 +2036,7 @@ run_tests_rosserial_test_rostest_test_rosserial_server_socket.test: cmake_check_
 
 # fast build rule for target.
 run_tests_rosserial_test_rostest_test_rosserial_server_socket.test/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_server_socket.test.dir/build.make bb8_arduino/rosserial/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_server_socket.test.dir/build
+	$(MAKE) -f rosserial/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_server_socket.test.dir/build.make rosserial/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_server_socket.test.dir/build
 .PHONY : run_tests_rosserial_test_rostest_test_rosserial_server_socket.test/fast
 
 #=============================================================================
@@ -2062,7 +2049,7 @@ run_tests_rosserial_test_rostest_test_rosserial_server_serial.test: cmake_check_
 
 # fast build rule for target.
 run_tests_rosserial_test_rostest_test_rosserial_server_serial.test/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/build.make bb8_arduino/rosserial/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/build
+	$(MAKE) -f rosserial/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/build.make rosserial/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/build
 .PHONY : run_tests_rosserial_test_rostest_test_rosserial_server_serial.test/fast
 
 #=============================================================================
@@ -2075,21 +2062,8 @@ _run_tests_rosserial_test_rostest_test_rosserial_server_serial.test: cmake_check
 
 # fast build rule for target.
 _run_tests_rosserial_test_rostest_test_rosserial_server_serial.test/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/build.make bb8_arduino/rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/build
+	$(MAKE) -f rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/build.make rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/build
 .PHONY : _run_tests_rosserial_test_rostest_test_rosserial_server_serial.test/fast
-
-#=============================================================================
-# Target rules for targets named run_tests_rosserial_test_rostest_test_rosserial_python_socket.test
-
-# Build rule for target.
-run_tests_rosserial_test_rostest_test_rosserial_python_socket.test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run_tests_rosserial_test_rostest_test_rosserial_python_socket.test
-.PHONY : run_tests_rosserial_test_rostest_test_rosserial_python_socket.test
-
-# fast build rule for target.
-run_tests_rosserial_test_rostest_test_rosserial_python_socket.test/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_python_socket.test.dir/build.make bb8_arduino/rosserial/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_python_socket.test.dir/build
-.PHONY : run_tests_rosserial_test_rostest_test_rosserial_python_socket.test/fast
 
 #=============================================================================
 # Target rules for targets named _run_tests_rosserial_test_rostest
@@ -2101,7 +2075,7 @@ _run_tests_rosserial_test_rostest: cmake_check_build_system
 
 # fast build rule for target.
 _run_tests_rosserial_test_rostest/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest.dir/build.make bb8_arduino/rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest.dir/build
+	$(MAKE) -f rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest.dir/build.make rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest.dir/build
 .PHONY : _run_tests_rosserial_test_rostest/fast
 
 #=============================================================================
@@ -2114,7 +2088,7 @@ clean_test_results_rosserial_test: cmake_check_build_system
 
 # fast build rule for target.
 clean_test_results_rosserial_test/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/build.make bb8_arduino/rosserial/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/build
+	$(MAKE) -f rosserial/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/build.make rosserial/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/build
 .PHONY : clean_test_results_rosserial_test/fast
 
 #=============================================================================
@@ -2127,7 +2101,7 @@ nav_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 nav_msgs_generate_messages_eus/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_windows/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make bb8_arduino/rosserial/rosserial_windows/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f rosserial/rosserial_windows/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make rosserial/rosserial_windows/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
 .PHONY : nav_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -2140,7 +2114,7 @@ nav_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 nav_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_windows/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make bb8_arduino/rosserial/rosserial_windows/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f rosserial/rosserial_windows/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make rosserial/rosserial_windows/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
 .PHONY : nav_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -2153,7 +2127,7 @@ nav_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 nav_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_windows/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make bb8_arduino/rosserial/rosserial_windows/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f rosserial/rosserial_windows/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make rosserial/rosserial_windows/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
 .PHONY : nav_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -2166,7 +2140,7 @@ nav_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 nav_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_windows/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make bb8_arduino/rosserial/rosserial_windows/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f rosserial/rosserial_windows/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make rosserial/rosserial_windows/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
 .PHONY : nav_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -2179,7 +2153,7 @@ nav_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 nav_msgs_generate_messages_py/fast:
-	$(MAKE) -f bb8_arduino/rosserial/rosserial_windows/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make bb8_arduino/rosserial/rosserial_windows/CMakeFiles/nav_msgs_generate_messages_py.dir/build
+	$(MAKE) -f rosserial/rosserial_windows/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make rosserial/rosserial_windows/CMakeFiles/nav_msgs_generate_messages_py.dir/build
 .PHONY : nav_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -2414,11 +2388,11 @@ help:
 	@echo "... gtest"
 	@echo "... _catkin_empty_exported_target"
 	@echo "... _rosserial_arduino_generate_messages_check_deps_Test"
+	@echo "... rosserial_arduino_gencpp"
 	@echo "... rosserial_arduino_generate_messages_cpp"
-	@echo "... _rosserial_arduino_generate_messages_check_deps_Adc"
 	@echo "... rosserial_arduino_generate_messages"
 	@echo "... rosserial_arduino_geneus"
-	@echo "... rosserial_arduino_gencpp"
+	@echo "... _rosserial_arduino_generate_messages_check_deps_Adc"
 	@echo "... rosserial_arduino_generate_messages_lisp"
 	@echo "... rosserial_arduino_generate_messages_py"
 	@echo "... rosserial_arduino_generate_messages_nodejs"
@@ -2428,20 +2402,20 @@ help:
 	@echo "... rosserial_arduino_generate_messages_eus"
 	@echo "... rosserial_mbed_geneus"
 	@echo "... rosserial_mbed_gencpp"
-	@echo "... _rosserial_mbed_generate_messages_check_deps_Test"
 	@echo "... rosserial_mbed_generate_messages_py"
 	@echo "... _rosserial_mbed_generate_messages_check_deps_Adc"
 	@echo "... rosserial_mbed_generate_messages_eus"
 	@echo "... rosserial_mbed_genlisp"
+	@echo "... _rosserial_mbed_generate_messages_check_deps_Test"
 	@echo "... rosserial_mbed_generate_messages_lisp"
 	@echo "... rosserial_mbed_generate_messages_cpp"
 	@echo "... rosserial_mbed_generate_messages_nodejs"
 	@echo "... rosserial_mbed_gennodejs"
 	@echo "... rosserial_mbed_generate_messages"
 	@echo "... rosserial_mbed_genpy"
-	@echo "... rosserial_msgs_gencpp"
 	@echo "... _rosserial_msgs_generate_messages_check_deps_RequestParam"
 	@echo "... rosserial_msgs_generate_messages"
+	@echo "... rosserial_msgs_gencpp"
 	@echo "... rosserial_msgs_generate_messages_eus"
 	@echo "... rosserial_msgs_generate_messages_nodejs"
 	@echo "... rosserial_msgs_generate_messages_cpp"
@@ -2544,13 +2518,11 @@ help:
 	@echo "... run_tests_rosserial_test"
 	@echo "... rosserial_test_rosserial_lib"
 	@echo "... _run_tests_rosserial_test"
-	@echo "... _run_tests_rosserial_test_rostest_test_rosserial_python_socket.test"
 	@echo "... _run_tests_rosserial_test_rostest_test_rosserial_server_socket.test"
 	@echo "... rosserial_test_publish_subscribe"
 	@echo "... run_tests_rosserial_test_rostest_test_rosserial_server_socket.test"
 	@echo "... run_tests_rosserial_test_rostest_test_rosserial_server_serial.test"
 	@echo "... _run_tests_rosserial_test_rostest_test_rosserial_server_serial.test"
-	@echo "... run_tests_rosserial_test_rostest_test_rosserial_python_socket.test"
 	@echo "... _run_tests_rosserial_test_rostest"
 	@echo "... clean_test_results_rosserial_test"
 	@echo "... nav_msgs_generate_messages_eus"

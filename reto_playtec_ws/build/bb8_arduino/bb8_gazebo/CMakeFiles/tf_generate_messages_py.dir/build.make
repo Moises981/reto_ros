@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rog-strix/Desktop/reto_playtec_ws/src
+CMAKE_SOURCE_DIR = /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rog-strix/Desktop/reto_playtec_ws/build
+CMAKE_BINARY_DIR = /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build
 
 # Utility rule file for tf_generate_messages_py.
 
@@ -63,10 +63,10 @@ bb8_arduino/bb8_gazebo/CMakeFiles/tf_generate_messages_py.dir/build: tf_generate
 .PHONY : bb8_arduino/bb8_gazebo/CMakeFiles/tf_generate_messages_py.dir/build
 
 bb8_arduino/bb8_gazebo/CMakeFiles/tf_generate_messages_py.dir/clean:
-	cd /home/rog-strix/Desktop/reto_playtec_ws/build/bb8_arduino/bb8_gazebo && $(CMAKE_COMMAND) -P CMakeFiles/tf_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build/bb8_arduino/bb8_gazebo && $(CMAKE_COMMAND) -P CMakeFiles/tf_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : bb8_arduino/bb8_gazebo/CMakeFiles/tf_generate_messages_py.dir/clean
 
 bb8_arduino/bb8_gazebo/CMakeFiles/tf_generate_messages_py.dir/depend:
-	cd /home/rog-strix/Desktop/reto_playtec_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rog-strix/Desktop/reto_playtec_ws/src /home/rog-strix/Desktop/reto_playtec_ws/src/bb8_arduino/bb8_gazebo /home/rog-strix/Desktop/reto_playtec_ws/build /home/rog-strix/Desktop/reto_playtec_ws/build/bb8_arduino/bb8_gazebo /home/rog-strix/Desktop/reto_playtec_ws/build/bb8_arduino/bb8_gazebo/CMakeFiles/tf_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/src /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/src/bb8_arduino/bb8_gazebo /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build/bb8_arduino/bb8_gazebo /home/rog-strix/Desktop/reto_ros/reto_playtec_ws/build/bb8_arduino/bb8_gazebo/CMakeFiles/tf_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : bb8_arduino/bb8_gazebo/CMakeFiles/tf_generate_messages_py.dir/depend
 
