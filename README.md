@@ -40,3 +40,16 @@ Create a publisher with CloudPoint2 msg.
 
 BB8_SIMULATION_WITH_ARDUINO:
 If you want to use it use the bb8.launch file that it's in the bb8_gazebo's folder.
+
+![varb](https://user-images.githubusercontent.com/59718261/80872750-93fd3d80-8c79-11ea-8ae9-4026d981fda1.png)
+
+If you wan to move the robot you can publish into the /cmd_vel with geometry_msgs for that you have to use "rostopic pub /cmd_vel geometry_msgs/Twist [TAB]+[TAB]" , you have to push two times TAB after copy that.
+
+![top](https://user-images.githubusercontent.com/59718261/80872821-08d07780-8c7a-11ea-860d-56be9a021dbd.png)
+
+![Peek 2020-05-02 13-42](https://user-images.githubusercontent.com/59718261/80872951-db37fe00-8c7a-11ea-83ea-ad8550404aae.gif)
+
+The last step is to use the IDE ARDUINO and upload the code that is in the Move Folder.
+
+
+
