@@ -1,6 +1,8 @@
 # reto_ros
 This a challenge provided by the playtec enterprise.
 
+First don't forget to compile the packages with catkin_tools.
+
 Details:
 
 1.Topic publisher:
