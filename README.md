@@ -1,7 +1,7 @@
 # reto_ros
 This a challenge provided by the playtec enterprise.
 
-First don't forget to compile the packages with catkin_tools.
+First don't forget to compile the packages with catkin_tools , if there is any error delete the devel and build folder and compile again.
 
 Details:
 
