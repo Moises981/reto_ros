@@ -1,0 +1,2 @@
+fakeLaserScan-master:reto_ros
+-DCATKIN_DEVEL_PREFIX=/home/rog-strix/Desktop/reto_playtec_ws/devel -DCMAKE_INSTALL_PREFIX=/home/rog-strix/Desktop/reto_playtec_ws/install -G Unix Makefiles

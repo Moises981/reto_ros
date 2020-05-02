@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <include file="$(find bb8_gazebo)/launch/gazebo.launch"/>  
+    <include file="$(find bb8_control)/launch/control.launch"/>
+    <include file="$(find bb8_control)/launch/cmd_pub.launch"/>
+</launch>

@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="reto_ros" type="reto_topics_suscriber.py" name="topic_sub" output="screen"/>
+    
+</launch>

@@ -1,0 +1,22 @@
+bb8:
+    # Publish all joint states -----------------------------------
+    joint_state_controller:
+      type: joint_state_controller/JointStateController
+      publish_rate: 50
+
+    direction:
+      type: effort_controllers/JointVelocityController
+      joint: direction_joint
+      pid: {p: 100.0, i: 0.10, d: 0.0}
+
+    rotation:
+      type: effort_controllers/JointVelocityController
+      joint: rotation_joint
+      pid: {p: 100.0, i: 0.10, d: 0.0}
+
+    head:
+      type: effort_controllers/JointVelocityController
+      joint: head_joint
+      pid: {p: 100.0, i: 0.10, d: 0.0}
+
+        

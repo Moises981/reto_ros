@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="reto_ros" type="pc_pub.py" name="PointCloud" output="screen"/>
+</launch>

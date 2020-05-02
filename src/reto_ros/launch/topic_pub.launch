@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="reto_ros" type="reto_topics_publisher.py" name="topic_pub" output="screen"/>
+    
+</launch>

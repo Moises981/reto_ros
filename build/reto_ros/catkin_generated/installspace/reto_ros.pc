@@ -1,0 +1,8 @@
+prefix=/home/rog-strix/Desktop/reto_playtec_ws/install
+
+Name: reto_ros
+Description: Description of reto_ros
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
