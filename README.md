@@ -1,8 +1,12 @@
 # reto_ros
 This a challenge provided by the playtec enterprise.
+
 Details:
+
 1.Topic publisher:
 To access to this file launch the topic_pub.launch
+
+![-home-rog-strix-Desktop-reto_playtec_ws-src-reto_ros-launch-topic_pub launch http:--localhost:11311_001](https://user-images.githubusercontent.com/59718261/80871953-78dbff00-8c74-11ea-91a0-bda2bb798837.png)
 
 2.Topic subscriber:
 
