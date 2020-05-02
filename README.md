@@ -49,7 +49,7 @@ If you wan to move the robot you can publish into the /cmd_vel with geometry_msg
 
 ![Peek 2020-05-02 13-42](https://user-images.githubusercontent.com/59718261/80872951-db37fe00-8c7a-11ea-83ea-ad8550404aae.gif)
 
-The last step is to use the IDE ARDUINO and upload the code that is in the Move Folder.
+The last step is to use the IDE ARDUINO and upload the code that is in the Move Folder and then use the rosserial.
 
 
 
